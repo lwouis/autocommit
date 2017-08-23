@@ -1,0 +1,25 @@
+{
+  "filesToWatch": [
+    "/etc/udev/rules.d/98-docking.rules",
+    "/etc/udev/rules.d/99-k380.rules",
+    "/home/lpontoise/.autocommit.sh",
+    "/home/lpontoise/.bashrc",
+    "/home/lpontoise/.config/alacritty/alacritty.yml",
+    "/home/lpontoise/.config/copyq/copyq.conf",
+    "/home/lpontoise/.docking.sh",
+    "/home/lpontoise/.fzf.bash",
+    "/home/lpontoise/.gitconfig",
+    "/home/lpontoise/.i3-blocks/",
+    "/home/lpontoise/.i3/",
+    "/home/lpontoise/.i3blocks.conf",
+    "/home/lpontoise/.inputrc",
+    "/home/lpontoise/.k380.sh",
+    "/home/lpontoise/.kill_window.sh",
+    "/home/lpontoise/.profile",
+    "/home/lpontoise/.vimrc",
+    "/home/lpontoise/.xsession"
+  ],
+  "destinationRepo": "/home/lpontoise/git_clones/dotfiles",
+  "remote": "origin",
+  "refs": "refs/heads/master:refs/heads/master"
+}

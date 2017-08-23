@@ -1,0 +1,28 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "jsRules": {},
+  "rules": {
+    "semicolon": [
+      true,
+      "never"
+    ],
+    "max-line-length": [
+      true,
+      120
+    ],
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "ordered-imports": false,
+    "arrow-parens": false,
+    "interface-name": [
+      "never-prefix"
+    ],
+    "jsdoc-format": false
+  },
+  "rulesDirectory": []
+}
