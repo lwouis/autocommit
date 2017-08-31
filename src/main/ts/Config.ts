@@ -1,5 +1,5 @@
 export interface Config {
-  /** <ist of absolute paths of the files/folders to watch (recursively)
+  /** List of absolute paths of the files/folders to watch (recursively)
    * e.g.  ["/path/config.conf", "/path/config-directory/"] */
   filesToWatch: string[]
   /** Absolute path to the Git repository where the files are copied and committed

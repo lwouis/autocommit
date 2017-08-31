@@ -30,6 +30,16 @@ class AutoCommit {
     await this.gitAddAllAndCommitAndPush()
   }
 
+  private static async update(path) {
+    await fs.copy(path, AutoCommit.destinationPath(path, 'updated: '))
+    await this.gitAddAllAndCommitAndPush()
+  }
+
+  private static async remove(path) {
+    await fs.remove(AutoCommit.destinationPath(path, 'removed: '))
+    await this.gitAddAllAndCommitAndPush()
+  }
+
   private static async gitAddAllAndCommitAndPush() {
     const index = await AutoCommit.REPO.refreshIndex()
     await index.addAll()
@@ -46,14 +56,6 @@ class AutoCommit {
         credentials: (url, userName) => nodegit.Cred.sshKeyFromAgent(userName),
       },
     })
-  }
-
-  private static async update(path) {
-    await fs.copy(path, AutoCommit.destinationPath(path, 'updated: '))
-  }
-
-  private static async remove(path) {
-    await fs.remove(AutoCommit.destinationPath(path, 'removed: '))
   }
 
   private static destinationPath(path: string, logPrefix: string): string {
